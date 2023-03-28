@@ -1,0 +1,413 @@
+#grand {
+    width: 1200px;
+    margin: auto;
+}
+header {
+    background-color: #ebebeb;
+    margin: 20px auto;
+    display: flex;
+    width: 1200px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+nav {
+    margin: 20px auto;
+    display: flex;
+}
+.zero {
+    width: 100px;
+    background-color: #ca9f67;
+}
+.elem1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.elem2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #7a310c;
+    font-size: 20px;
+    font-family: "XO Courser";
+    padding: 10px;
+    transition: transform 200ms linear;
+    background-color: #ca9f67;
+}
+nav a:hover {
+    transform: scale(1.2);
+    background-color: #a87a3d;
+    color: goldenrod;
+    border-radius: 5px;
+}
+@keyframes move {
+    from {
+        transform: rotate(-40deg);
+    }
+    to {
+        transform: rotate(40deg);
+    }
+}
+#swing {
+    position: absolute;
+    width: 300px;
+    margin-top: -220px;
+    margin-left: 590px;
+    animation-play-state: paused;
+    animation-duration: 3s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform-origin: top center;
+}
+#swing:hover {
+    animation-play-state: running;
+}
+#hang {
+    height: 100px;
+    width: 10px;
+    border: 5px ridge #5a1e00;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 140px;
+    background-color: #7a310c;
+}
+#name {
+    position: absolute;
+    width: 300px;
+    border: 5px ridge #5a1e00;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "XO Courser";
+    font-size: 25px;
+    background-color: #5a1e00;
+    color: #ebebeb;
+}
+.ch-back {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    overflow: hidden;
+    transform: rotate(-105deg) skew(10deg);
+    color: #5a1e00;
+    margin-top: -75px;   
+    margin-left: -110px;
+}
+@keyframes run {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -4000px;
+    }
+}
+.ch-new {
+    font-size: 40px;
+    letter-spacing: -10px;
+    animation-play-state: paused;
+    animation-duration: 30s;
+    animation-name: run;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.ch-new:hover {
+    animation-play-state: running;
+}
+.ch2 {
+    transform: rotate(90deg) skew(-15deg);
+    margin-left: 180px;
+    width: 330px;
+}
+.ch3 {
+    transform: rotate(-50deg) skew(-10deg);
+    margin-left: 780px;
+    width: 420px;
+}
+.ch4 {
+    margin-top: -170px;
+    margin-left: -70px; 
+    transform: rotate(105deg) skew(-5deg);
+}
+.ch5 {
+    margin-top: -180px;
+    margin-left: -70px;
+    transform: rotate(255deg) skew(5deg);
+    width: 330px;
+}
+.ch6 {
+    margin-top: -170px;
+    transform: rotate(90deg) skew(-15deg);
+    margin-left: 695px;
+}
+.ch7 {
+    transform: rotate(21deg) skew(-5deg);
+    margin-left: -15px;
+    margin-top: -170px;
+    width: 935px;
+}
+.ch8 {
+    transform: rotate(-201deg) skew(-5deg);
+    margin-left: -15px;
+    margin-top: -170px;
+    width: 935px;   
+}
+.ch9 {
+    transform: rotate(100deg) skew(-15deg);
+    margin-top: -165px;
+}
+.ch10 {
+    transform: rotate(-22deg) skew(20deg);
+    margin-top: -180px;
+    margin-left: 10px;
+    width: 900px;
+}
+.ch11 {
+    margin-left: 600px;
+    margin-top: -170px;
+    width: 330px;
+}
+.ch12 {
+    transform: rotate(95deg);
+    margin-left: 700px;
+    margin-top: -170px;
+    width: 320px;
+}
+.ch13 {
+    margin-top: -180px;
+}
+.ch14 {
+    margin-top: -175px;
+    transform: rotate(105deg);
+    margin-left: 650px;
+    width: 340px;
+}
+.ch15 {
+    margin-top: -170px;
+    margin-left: -150px;
+    transform: rotate(-90deg) skew(-15deg);
+}
+.ch16 {
+    margin-top: -170px;
+    transform: rotate(90deg) skew(15deg);
+    margin-left: -120px;
+}
+.ch17 {
+    margin-top: -180px;
+    transform: rotate(-60deg);
+    margin-left: 600px;
+    width: 380px;
+}
+.ch18 {
+    margin-top: -170px;
+    margin-left: -130px;
+    transform: rotate(90deg) skew(12deg);
+}
+.ch19 {
+    margin-top: -170px;
+    transform: rotate(255deg) skew(-8deg);
+    margin-left: 650px;
+    width: 340px;
+}
+.ch20 {
+    margin-top: -170px;
+    transform: rotate(90deg);
+    margin-left: 700px;
+}
+.parent {
+    display: flex;
+    width: 1200px;
+    margin: 300px auto;
+}
+.wrapper {
+    width: 910px;
+    height: 500px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    display: flex;
+}
+.border {
+    border: 15px double #ca9f67;
+    margin: 40px 75px;
+    width: 750px;
+    height: 420px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.box-1 {
+    width: 300px;
+    height: 390px;
+    border: 1px solid red;
+}
+.box-2 {
+    width: 420px;
+    height: 390px;
+    border: 1px solid green;
+}
+.ruble-100 {
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    box-shadow: 5px 5px 10px black;
+}
+.info {
+    position: absolute;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 3px 10px;
+    font-family: "XO Courser";
+    background-color: #ca9f67;
+    color: #5a1e00;
+    border-radius: 5px; 
+    margin-left: 25px;
+    transition: transform 200ms linear;
+}
+.info:hover {
+    background-color: #a87a3d;
+    color: #daa520;
+    transform: scale(1.1);
+}
+#okno-1, #okno-2, #okno-3, #okno-4, #okno-5, #okno-6, #okno-7 {
+    width: 230px;
+    height: 100px;
+    background-color: #ebebeb;
+    border: 3px double #ca9f67;
+    border-radius: 10px;
+    transition: transform 1s linear;
+    margin-left: 95px;
+    margin-top: 25px;
+}
+#okno-1:target {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+#okno-2:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+#okno-3:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;  
+}
+#okno-4:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;  
+}
+#okno-5:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+#okno-6:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;   
+    box-sizing: border-box;
+}
+#okno-7:target {
+    transform: scale(5.3);
+    border: 3px double #ca9f67;
+    font-size: 5px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box; 
+}
+.close {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 140px;
+    font-size: 4px;
+    text-decoration: none;
+    background-color:#ca9f67;
+    border-radius: 4px;
+    color: #7a310c;
+    padding: 1px 3px;
+    font-family: "XO Courser";
+}
+.close:hover {
+    background-color: #a87a3d;
+    color: #daa520;
+}
+#text-7 {
+    width: 360px;
+    height: 205px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ca9f67;
+    color: #5a1e00;
+    border-radius: 10px;
+}
+.row {
+    display: flex;
+}
+.lil {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-family: "XO Courser";
+    font-size: 20px;
+    transition: transform 100ms linear;
+}
+.lil:hover {
+    transform: scale(1.5);
+}
